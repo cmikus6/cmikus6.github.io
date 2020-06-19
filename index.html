@@ -1,45 +1,109 @@
 <!DOCTYPE html>
-<HTML lang="en-us">
-    <HEAD>
-        <meta charset="UTF-8">
-        <title>Activity 1: Basic HTML Bio</title>
-    </HEAD>
-    <BODY>
-      <h1>Chris Mikus</h1>
-      <img src="https://scontent-iad3-1.cdninstagram.com/v/t51.2885-19/s150x150/62496302_206842446899533_4513738683651719168_n.jpg?_nc_ht=scontent-iad3-1.cdninstagram.com&_nc_ohc=5uE-nAUzXvIAX9fF099&oh=577e70111780a84dd0fae317085cfbde&oe=5F089915" alt="Chris Mikus">
-        <br>
+<html lang="en-us">
+  <head>
 
-        <p>My name is Chris and I am an aspiring data analyst.  I graduated from UVA with a degree in chemical engineering and a minor in materials science.  After graduating, I started working as a safety engineer and risk manager for the US Navy.</p>
-        <p>In my free time, I like to stay active.  I ran a marathon in late October - something that you would have needed to be there to witness because it will never happen again. I also love playing volleyball, swimming, playing anything Zelda-related, and teaching myself Disney songs on the keyboard.</p>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <h2>If you ever wanted to reach me</h2>
-        <ul>
-          <li><strong>Email:</strong> <a href="#">chris.j.mikus@gmail.com</a></li>
-          <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/christopher-mikus-a26a7311b/">This Link</a></li>
-          <li><strong>GitHub:</strong> <a href="#">This Link</a></li>
-        </ul>
+    <title>Bootstrap Visualization Dashboard</title>
 
-        <table border = "1">
-          <tr>
-            <th>Books</th>
-            <th>Movies</th>
-            <th>Games</th>
-          </tr>
-          <tr>
-            <td>In Pursuit of the Unknown</td>
-            <td>The Return of the King</td>
-            <td>Breath of the Wild</td>
-          </tr>
-          <tr>
-            <td>The Three Musketeers</td>
-            <td>The Martian</td>
-            <td>Civilization V</td>
-          </tr>
-          <tr>
-            <td>Les Miserables</td>
-            <td>Avengers: Endgame</td>
-            <td>Settlers of Catan</td>
-          </tr>
-        </table>
-    </BODY>
-</HTML>
+    <!-- Boostrap Stylesheet -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" media="screen">
+
+    <!-- Our own CSS stylesheet -->
+    <link rel="stylesheet" href="assets/css/styles.css" media="screen">
+
+  </head>
+
+  <body>
+    <!-- Start of navbar -->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid navbar-custom">
+
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="row">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+              <span class="sr-only">Toggle Navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <div class="col-xs-9 phone-nav">
+              <a class="navbar-brand" href="#" id="logo">Lattitude</a>
+            </div>
+          </div>
+
+          <!-- Collect the nav links, forms, and other content for toggling -->
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right navbar-right-custom">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                 <li><a href="visualizations/temp.html">Max Temperature</a></li>
+                  <li><a href="visualizations/humidity.html">Humidity</a></li>
+                  <li><a href="visualizations/cloudiness.html">Cloudiness</a></li>
+                  <li><a href="visualizations/wind.html">Wind Speed</a></li>
+                </ul>
+              </li>
+              <li><a href="comparison.html">Comparison</a></li>
+              <li><a href="data.html">Data</a></li>
+            </ul>
+          </div><!-- /.navbar-collapse -->
+        </div>
+      </div><!-- /.container-fluid -->
+    </nav>
+    <!-- End of navbar -->
+
+    <!-- Start of container -->
+    <div class="container">
+      <section class="row">
+        <div class="col-md-8">
+          <article class="description-content">
+            <h1 class="description-header">Summary: Latitude vs. X</h1>
+            <hr class="description-hr"/>
+            <img src="assets/images/Fig1.png" alt="" id="description-image"/>
+            <p>The purpose of this project was to analyze how weather changes as you get closer to the equator. To accomplish this analysis, we first pulled data from the OpenWeatherMap API to assemble a dataset on over 500 cities.</p>
+            <p>After assembling the dataset, we used Matplotlib to plot various aspects of the weather vs. latitude. Factors we looked at included: temperature, cloudiness, wind speed, and humidity. This site provides the source data and visualizations created as part of the analysis, as well as explanations and descriptions of any trends and correlations witnessed.</p>
+          </article>
+        </div>
+        <div class="col-md-4">
+
+          <!-- Start of Visualizations imageNav Area -->
+          <section id="imageNav-area">
+            <div class="imageNav-content">
+              <h2 class="imageNav-header">Visualizations</h2>
+              <hr />
+              <div id="images">
+                <a href="visualizations/temp.html"><img src="assets/images/Fig1.png" alt="Latitude vs. Max Temperature" class="imageNav-photo"></a>
+                <a href="visualizations/humidity.html"><img src="assets/images/Fig2.png" alt="Latitude vs. Humidity" class="imageNav-photo"></a>
+                <a href="visualizations/cloudiness.html"><img src="assets/images/Fig3.png" alt="Latitude vs. Cloudiness" class="imageNav-photo"></a>
+                <a href="visualizations/wind.html"><img src="assets/images/Fig4.png" alt="Latitude vs. Wind Speed" class="imageNav-photo"></a>
+              </div>
+            </div>
+          </section>
+          <!-- End of the Visualizations imageNav Area -->
+
+        </div>
+      </section>
+    </div>
+    <!-- End of container -->
+
+    <!-- Start of footer -->
+    <footer class="footer navbar-fixed-bottom">
+      <div class="two-toned-footer-color"></div>
+      <p class="text-muted text-muted-footer text-center">
+        &copy; 
+      </p>
+    </footer>
+    <!-- End of footer -->
+
+    <!-- jQuery CDN -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+
+    <!-- Bootstrap CDN -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  </body>
+
+</html>
