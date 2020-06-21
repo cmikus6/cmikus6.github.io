@@ -1,27 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
     <title>HTML_Case_Challenge_CJM</title>
-
-    <!-- Boostrap Stylesheet -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="screen">
-
-    <!-- Our own CSS stylesheet -->
     <link rel="stylesheet" href="../assets/css/styles.css" media="screen">
-
   </head>
-
   <body>
     <!-- Start of navbar -->
     <nav class="navbar navbar-default">
       <div class="container-fluid navbar-custom">
-
-        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="row">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -34,8 +24,6 @@
               <a class="navbar-brand" href="../index.html" id="logo">LatitHOOde <br><i>Weather, but for Hoos</i></a>
             </div>
           </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right navbar-right-custom">
               <li class="dropdown">
@@ -50,27 +38,29 @@
               <li><a href="../comparison.html">Comparison</a></li>
               <li><a href="../data.html">Data</a></li>
             </ul>
-          </div><!-- /.navbar-collapse -->
+          </div>
         </div>
-      </div><!-- /.container-fluid -->
+      </div>
       <div class= "two-toned-header-color"></div>
       <div class= "three-toned-header-color"></div>
     </nav>
     <!-- End of navbar -->
-
     <!-- Start of container -->
     <div class="container">
       <section class="row">
         <div class="col-md-8">
           <article class="description-content">
-            <h1 class="description-header">Max Temperature</h1>
+            <h1 class="description-header">Latitude vs. Max Temperature</h1>
             <hr class="description-hr"/>
             <img src="../assets/images/Fig1_CJM.png" alt="" class="img-responsive"/>
-            <p>As expected, the weather becomes significantly warmer as one approaches the equator (0 Deg. Latitude). More interestingly, however, is the fact that the southern hemisphere tends to be warmer this time of year than the northern hemisphere. This may be due to the tilt of the earth at the time of the year this data was gathered.</p>
+            <p>It can be seen in the plot that cities closer to the Equator (located at a latitude of 0), the daily temperature increases, a trend visible as one approaches the Equator 
+              from either the South Pole (latitude of -90) or the North Pole (latitude of 90). It appears that the northern hemisphere tends to be warmer this time of year than the southern 
+              hemisphere (the trend can be observed by seeing that temperatures at a latitude of 20 are higher than those at a latitude of -20). This may be because 
+              on May 23, 2020, when the data was collected, the earth was tilted such that the northern hemisphere was closer to the sun (it is spring in the northern hemisphere and autumn
+              in the southern hemisphere).</p>
           </article>
         </div>
         <div class="col-md-4">
-
           <!-- Start of Visualizations imageNav Area -->
           <section id="imageNav-area">
             <div class="imageNav-content">
@@ -86,12 +76,10 @@
             </div>
           </section>
           <!-- End of the Visualizations imageNav Area -->
-
         </div>
       </section>
     </div>
     <!-- End of container -->
-
     <!-- Start of footer -->
     <footer class="footer navbar-fixed-bottom">
       <div class="two-toned-footer-color"></div>
@@ -101,12 +89,9 @@
       </p>
     </footer>
     <!-- End of footer -->
-
     <!-- jQuery CDN -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-
     <!-- Bootstrap CDN -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </body>
-
 </html>

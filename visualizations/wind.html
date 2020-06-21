@@ -1,27 +1,17 @@
 <!DOCTYPE html>
 <html lang="en-us">
   <head>
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-
     <title>HTML_Case_Challenge_CJM</title>
-
-    <!-- Boostrap Stylesheet -->
     <link rel="stylesheet" href="../assets/css/bootstrap.min.css" media="screen">
-
-    <!-- Our own CSS stylesheet -->
     <link rel="stylesheet" href="../assets/css/styles.css" media="screen">
-
   </head>
-
   <body>
     <!-- Start of navbar -->
     <nav class="navbar navbar-default">
       <div class="container-fluid navbar-custom">
-
-        <!-- Brand and toggle get grouped for better mobile display -->
         <div class="row">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -34,7 +24,6 @@
               <a class="navbar-brand" href="../index.html" id="logo">LatitHOOde <br><i>Weather, but for Hoos</i></a>
             </div>
           </div>
-
           <!-- Collect the nav links, forms, and other content for toggling -->
           <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right navbar-right-custom">
@@ -50,14 +39,13 @@
               <li><a href="../comparison.html">Comparison</a></li>
               <li><a href="../data.html">Data</a></li>
             </ul>
-          </div><!-- /.navbar-collapse -->
+          </div>
         </div>
-      </div><!-- /.container-fluid -->
+      </div>
       <div class= "two-toned-header-color"></div>
       <div class= "three-toned-header-color"></div>
     </nav>
     <!-- End of navbar -->
-
     <!-- Start of container -->
     <div class="container">
       <section class="row">
@@ -66,11 +54,14 @@
             <h1 class="description-header">Wind Speed</h1>
             <hr class="description-hr"/>
             <img src="../assets/images/Fig4_CJM.png" alt="" class="img-responsive"/>
-            <p>With our current analysis, there is no obvious relationship between latitude and wind speed, so further analysis is needed. It is easy to see that there may be some correlation; notice that a much larger number of cities in the northern hemisphere report over 20 mph of wind.</p>
+            <p>There is not a strong correlation between a city's latitude and wind speed. The majority of cities involved in the dataset experienced winds
+              of under 10 mph. A couple of larger wind speeds can be seen at more extreme latitudes (closer to the poles), but there are not enough of these points to 
+              draw any reliable conclusions. An interesting follow-up investigation would be investigating the effect of regional air pressure on wind speeds. As wind is 
+              the movement of air from a high pressure area to a low pressure area, it would be interesting to see the effect of a region's air pressure (and how it compares to 
+              the neighboring regions) on the wind speed in the city.</p>
           </article>
         </div>
         <div class="col-md-4">
-
           <!-- Start of Visualizations imageNav Area -->
           <section id="imageNav-area">
             <div class="imageNav-content">
@@ -86,12 +77,10 @@
             </div>
           </section>
           <!-- End of the Visualizations imageNav Area -->
-
         </div>
       </section>
     </div>
     <!-- End of container -->
-
     <!-- Start of footer -->
     <footer class="footer navbar-fixed-bottom">
       <div class="two-toned-footer-color"></div>
@@ -101,12 +90,9 @@
       </p>
     </footer>
     <!-- End of footer -->
-
     <!-- jQuery CDN -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-
     <!-- Bootstrap CDN -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
   </body>
-
 </html>
